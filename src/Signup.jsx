@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { FaEyeSlash } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import mu from "../public/mu.svg"
 function Signup() {
   const [showPassword, setShowPassword] = useState(false);
   const [showConfirmPassword, setShowConfirmPassword] = useState(false);
@@ -9,7 +10,7 @@ function Signup() {
     <div className="flex flex-col h-screen w-full bg-white">
       <div className="flex flex-col items-center justify-center pt-8 pb-4">
         <img
-          src="/public/mu.svg"
+          src={mu}
           alt="University Logo"
           className="h-24 w-auto"
         />
