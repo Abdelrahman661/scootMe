@@ -1,6 +1,8 @@
 import { Outlet, Link } from "react-router-dom";
 import "./App.css";
 import welcomelogo from "../public/welcomelogo.svg"
+import welcomeland from "../public/welcomeland.svg"
+
 function App() {
   return (
     <div className="flex flex-col h-screen w-full bg-white">
@@ -11,7 +13,7 @@ function App() {
 
         <div className="w-60 h-60">
           <img
-            src="../public/welcomeland.svg"
+            src={welcomeland}
             alt="Scooter Illustration"
             className="w-full h-full object-contain"
           />
