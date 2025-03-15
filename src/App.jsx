@@ -1,12 +1,12 @@
 import { Outlet, Link } from "react-router-dom";
 import "./App.css";
-
+import {welcomelogo} from "/public/welcomelogo.svg"
 function App() {
   return (
     <div className="flex flex-col h-screen w-full bg-white">
       <div className="flex flex-col items-center justify-center flex-grow">
         <div className="mb-4">
-          <img src="../public/welcomelogo.svg" alt="" />
+          <img src={welcomelogo} alt="" />
         </div>
 
         <div className="w-60 h-60">
