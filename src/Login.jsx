@@ -1,19 +1,15 @@
 import { useState } from "react";
 import { FaEyeSlash } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import mu from "../public/mu.svg"
-import scan from "../public/scan.svg"
+import mu from "../public/mu.svg";
+import scan from "../public/scan.svg";
 function Login() {
   const [showPassword, setShowPassword] = useState(false);
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-white px-4">
       <div className="mb-8">
-        <img
-          src={mu}
-          alt="University Logo"
-          className="h-24 w-auto"
-        />
+        <img src={mu} alt="University Logo" className="h-24 w-auto" />
       </div>
 
       <div className="w-full max-w-xl space-y-6">
@@ -57,7 +53,7 @@ function Login() {
             />
             <span className="ml-2">Remember me</span>
           </label>
-          <Link to="/forgot-password" className="text-sm text-orange-500">
+          <Link to="/forget-password" className="text-sm text-orange-500">
             Forgot your password?
           </Link>
         </div>
@@ -67,11 +63,7 @@ function Login() {
             Login by scanning your university card
           </p>
           <div className="flex justify-center">
-            <img
-              src={scan}
-              alt="Card Scan Icon"
-              className="h-12 w-12"
-            />
+            <img src={scan} alt="Card Scan Icon" className="h-12 w-12" />
           </div>
         </div>
 
